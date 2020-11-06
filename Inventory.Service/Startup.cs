@@ -33,7 +33,7 @@ namespace Inventory.Service
             services.AddControllers();
 
             services.AddDbContext<AmCartDbContext>(options =>
-                        options.UseSqlServer(Configuration.GetConnectionString("HMSAppContext")));
+                        options.UseSqlServer(Configuration.GetConnectionString("AmCartDbContext")));
 
             SetupBusiness(services);
             SetupRepositories(services);
