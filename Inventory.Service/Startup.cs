@@ -10,6 +10,7 @@ using Inventory.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,7 +32,8 @@ namespace Inventory.Service
         {
             services.AddControllers();
 
-           
+            services.AddDbContext<AmCartDbContext>(options =>
+                        options.UseSqlServer(Configuration.GetConnectionString("HMSAppContext")));
 
             SetupBusiness(services);
             SetupRepositories(services);

@@ -1,7 +1,7 @@
 ﻿using Inventory.Core.Models;
 using Inventory.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 

@@ -1,5 +1,7 @@
 ﻿using Inventory.Core.Models;
 using Inventory.Core.Repositories;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Inventory.Data.Repositories
 {
@@ -9,6 +11,11 @@ namespace Inventory.Data.Repositories
            : base(context)
         {
 
+        }
+
+        public async Task<IList<Product>> GetProducts()
+        {
+            return await this.GetAll();
         }
     }
 }

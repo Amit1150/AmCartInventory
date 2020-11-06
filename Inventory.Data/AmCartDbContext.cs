@@ -1,30 +1,22 @@
 ﻿using Inventory.Core.Models;
-using Inventory.Data.Mapping;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Text;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using System.Reflection;
 
 namespace Inventory.Data
 {
-    public class AmCartDbContext: DbContext
+    public class AmCartDbContext : DbContext
     {
-        static AmCartDbContext()
+        public AmCartDbContext(DbContextOptions<AmCartDbContext> options) 
+            : base(options)
         {
-            Database.SetInitializer<AmCartDbContext>(null);
         }
 
-        public AmCartDbContext()
-            : base("Name=AmCartDbContext")
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
         public DbSet<Product> Product { get; set; }
-
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Configurations.Add(new ProductMap());
-        }
     }
 }
