@@ -18,5 +18,12 @@ namespace Inventory.Data
         }
 
         public DbSet<Product> Product { get; set; }
+        public DbSet<Brand> Brand { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<ProductImage> ProductImage { get; set; }
+        public DbSet<ProductMetadata> ProductMetadata { get; set; }
+        public DbSet<Purchase> Purchase { get; set; }
+        public DbSet<Stock> Stock { get; set; }
+        public DbSet<Vendor> Vendor { get; set; }
     }
 }
