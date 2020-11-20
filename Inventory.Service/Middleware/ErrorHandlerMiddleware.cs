@@ -1,5 +1,6 @@
 ﻿using Inventory.Common.Types;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -10,11 +11,13 @@ namespace Inventory.Service.Middleware
 {
     public class ErrorHandlerMiddleware
     {
+        private readonly ILogger<ErrorHandlerMiddleware> _logger;
         private readonly RequestDelegate _next;
 
-        public ErrorHandlerMiddleware(RequestDelegate next)
+        public ErrorHandlerMiddleware(RequestDelegate next, ILogger<ErrorHandlerMiddleware> logger)
         {
             _next = next;
+            _logger = logger;
         }
 
         public async Task Invoke(HttpContext context)
@@ -45,6 +48,8 @@ namespace Inventory.Service.Middleware
                 }
 
                 var result = JsonSerializer.Serialize(new { message = error?.Message });
+
+                _logger.LogError(error, error.Message);
                 await response.WriteAsync(result);
             }
         }

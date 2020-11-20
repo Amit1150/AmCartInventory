@@ -1,3 +1,6 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Inventory.Core.Models
 {
     public class Purchase : BaseEntity, IEntity
