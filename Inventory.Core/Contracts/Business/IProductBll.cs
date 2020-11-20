@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Inventory.Core.Business
+namespace Inventory.Core.Contracts.Business
 {
     public interface IProductBll
     {

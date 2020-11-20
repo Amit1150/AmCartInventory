@@ -1,6 +1,6 @@
-﻿using Inventory.Core.Business;
+﻿using Inventory.Core.Contracts.Business;
+using Inventory.Core.Contracts.Repository;
 using Inventory.Core.Dto;
-using Inventory.Core.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

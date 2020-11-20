@@ -1,11 +1,11 @@
-﻿using Inventory.Core.Models;
-using Inventory.Core.Repositories;
+﻿using Inventory.Core.Contracts.Repository;
+using Inventory.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Inventory.Data.Repositories
+namespace Inventory.Data.Repository
 {
     public abstract class Repository<TEntity, TContext> : IRepository<TEntity>
         where TEntity : class, IEntity

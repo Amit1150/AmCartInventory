@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Inventory.Core.Repositories
+namespace Inventory.Core.Contracts.Repository
 {
     public interface IRepository<T> where T : class, IEntity
     {

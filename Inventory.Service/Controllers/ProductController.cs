@@ -1,4 +1,4 @@
-﻿using Inventory.Core.Business;
+﻿using Inventory.Core.Contracts.Business;
 using Inventory.Core.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
