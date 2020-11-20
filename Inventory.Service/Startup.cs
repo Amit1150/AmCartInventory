@@ -3,6 +3,7 @@ using Inventory.Core.Contracts.Business;
 using Inventory.Core.Contracts.Repository;
 using Inventory.Data;
 using Inventory.Data.Repository;
+using Inventory.Service.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -42,6 +43,8 @@ namespace Inventory.Service
             }
 
             app.UseRouting();
+
+            app.UseMiddleware<ErrorHandlerMiddleware>();
 
             app.UseAuthorization();
 

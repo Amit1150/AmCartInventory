@@ -1,4 +1,5 @@
-﻿using Inventory.Core.Contracts.Business;
+﻿using Inventory.Common.Types;
+using Inventory.Core.Contracts.Business;
 using Inventory.Core.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace Inventory.Service.Controllers
         [HttpGet]
         public async Task<IEnumerable<ProductDto>> Get()
         {
+            // throw new AmCartException("Sample exception test");
             var data = await productBll.GetProducts();
             return data;
         }
