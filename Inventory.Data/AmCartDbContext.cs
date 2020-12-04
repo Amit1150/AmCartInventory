@@ -15,6 +15,7 @@ namespace Inventory.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.Seed();
         }
 
         public DbSet<Product> Product { get; set; }

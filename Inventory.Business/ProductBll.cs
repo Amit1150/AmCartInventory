@@ -18,11 +18,7 @@ namespace Inventory.Business
         public async Task<IEnumerable<ProductDto>> GetProducts()
         {
             var data = await productRepository.GetProducts();
-            return data.Select(x => new ProductDto
-            {
-                Id = x.Id,
-                Name = x.Name
-            });
+            return data.Select(x => new ProductDto(x));
         }
     }
 }
