@@ -5,27 +5,27 @@ VisualStudioVersion = 16.0.30406.169
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{616E8B0A-46E7-4596-A5C8-43FB5D9EC6E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Service", "Inventory.Service\Inventory.Service.csproj", "{EC0A5635-179B-4980-8FEF-86C08B3877F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Service", "Inventory.Service\Inventory.Service.csproj", "{EC0A5635-179B-4980-8FEF-86C08B3877F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{EC6B47B8-B1BA-4266-A2B6-7518735809C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Core", "Inventory.Core\Inventory.Core.csproj", "{5F61A9AC-02B1-468C-8597-D6E34CF71971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Core", "Inventory.Core\Inventory.Core.csproj", "{5F61A9AC-02B1-468C-8597-D6E34CF71971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Business", "Inventory.Business\Inventory.Business.csproj", "{B11A68AF-209C-412E-808A-FE3C12816ABB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Business", "Inventory.Business\Inventory.Business.csproj", "{B11A68AF-209C-412E-808A-FE3C12816ABB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DB953CD2-E6E0-43CA-AFA4-8DF836C018DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Data", "Inventory.Data\Inventory.Data.csproj", "{178505A2-4DBE-4859-B13D-66272A7BAB66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Data", "Inventory.Data\Inventory.Data.csproj", "{178505A2-4DBE-4859-B13D-66272A7BAB66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D6CE0FE2-D815-4F5F-A900-DF385D124241}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Common", "Inventory.Common\Inventory.Common.csproj", "{786A29AD-25AE-4819-9A23-93E8376EC50F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Common", "Inventory.Common\Inventory.Common.csproj", "{786A29AD-25AE-4819-9A23-93E8376EC50F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{08EF3D24-158C-405A-9BC6-A2031E5AA2AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Tests", "Inventory.Tests\Inventory.Tests.csproj", "{9B89AAF6-47B5-4F70-80ED-0A5B91D8AD8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Resources", "Inventory.Resources\Inventory.Resources.csproj", "{7CBDE109-1964-4BD8-A17D-57D3C9DECF86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Resources", "Inventory.Resources\Inventory.Resources.csproj", "{7CBDE109-1964-4BD8-A17D-57D3C9DECF86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Tests", "Inventory.Tests\Inventory.Tests.csproj", "{82A0C76B-2CB0-41FB-AE6D-0E17D0800ADA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,14 +53,14 @@ Global
 		{786A29AD-25AE-4819-9A23-93E8376EC50F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{786A29AD-25AE-4819-9A23-93E8376EC50F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{786A29AD-25AE-4819-9A23-93E8376EC50F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B89AAF6-47B5-4F70-80ED-0A5B91D8AD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B89AAF6-47B5-4F70-80ED-0A5B91D8AD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B89AAF6-47B5-4F70-80ED-0A5B91D8AD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B89AAF6-47B5-4F70-80ED-0A5B91D8AD8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7CBDE109-1964-4BD8-A17D-57D3C9DECF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7CBDE109-1964-4BD8-A17D-57D3C9DECF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CBDE109-1964-4BD8-A17D-57D3C9DECF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CBDE109-1964-4BD8-A17D-57D3C9DECF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A0C76B-2CB0-41FB-AE6D-0E17D0800ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A0C76B-2CB0-41FB-AE6D-0E17D0800ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A0C76B-2CB0-41FB-AE6D-0E17D0800ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A0C76B-2CB0-41FB-AE6D-0E17D0800ADA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,8 +71,8 @@ Global
 		{B11A68AF-209C-412E-808A-FE3C12816ABB} = {EC6B47B8-B1BA-4266-A2B6-7518735809C2}
 		{178505A2-4DBE-4859-B13D-66272A7BAB66} = {DB953CD2-E6E0-43CA-AFA4-8DF836C018DF}
 		{786A29AD-25AE-4819-9A23-93E8376EC50F} = {D6CE0FE2-D815-4F5F-A900-DF385D124241}
-		{9B89AAF6-47B5-4F70-80ED-0A5B91D8AD8E} = {08EF3D24-158C-405A-9BC6-A2031E5AA2AC}
 		{7CBDE109-1964-4BD8-A17D-57D3C9DECF86} = {D6CE0FE2-D815-4F5F-A900-DF385D124241}
+		{82A0C76B-2CB0-41FB-AE6D-0E17D0800ADA} = {08EF3D24-158C-405A-9BC6-A2031E5AA2AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7FD98D98-6A81-4439-A927-B64BDC68545A}
