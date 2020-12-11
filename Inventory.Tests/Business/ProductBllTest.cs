@@ -5,6 +5,7 @@ using Inventory.Data.Repository;
 using Inventory.Tests.Data;
 using Microsoft.EntityFrameworkCore;
 using Moq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,8 +18,9 @@ namespace Inventory.Tests.Business
         private async Task<AmCartDbContext> GetContext()
         {
             int PRODUCT_COUNT = 10;
+            string dbName = Guid.NewGuid().ToString();
             var options = new DbContextOptionsBuilder<AmCartDbContext>()
-                    .UseInMemoryDatabase(databaseName: "TestDatabase")
+                    .UseInMemoryDatabase(databaseName: dbName)
                     .Options;
 
             var context = new AmCartDbContext(options);
