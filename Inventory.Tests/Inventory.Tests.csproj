@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bogus" Version="32.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.9" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="Moq" Version="4.15.2" />
     <PackageReference Include="xunit" Version="2.4.0" />
@@ -15,10 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Business\" />
-    <Folder Include="Mocks\Business\" />
-    <Folder Include="Mocks\Repository\" />
+    <ProjectReference Include="..\Inventory.Business\Inventory.Business.csproj" />
+    <ProjectReference Include="..\Inventory.Core\Inventory.Core.csproj" />
+    <ProjectReference Include="..\Inventory.Data\Inventory.Data.csproj" />
+    <ProjectReference Include="..\Inventory.Service\Inventory.Service.csproj" />
   </ItemGroup>
 
 </Project>

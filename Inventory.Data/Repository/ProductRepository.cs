@@ -17,14 +17,14 @@ namespace Inventory.Data.Repository
 
         public async Task<IList<Product>> GetProducts()
         {
-            var products = this.context.Product
+            var products = await this.context.Product
                 .Include(x => x.Brand)
                 .Include(x => x.Category)
                 .Include(x => x.ProductImages)
                 .Include(x => x.ProductMetadataList)
                 .Include(x => x.Stocks)
                 .Where(x => !x.IsRemoved)
-                .ToList();
+                .ToListAsync();
             return products;
         }
     }
